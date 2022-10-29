@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, "public")))
 
 const driver = neo4j.driver(
     "bolt://localhost:7687",
-    neo4j.auth.basic("neo4j", "Mindus@123")
+    neo4j.auth.basic("neo4j", "****")
 )
 var session = driver.session()
 
